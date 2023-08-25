@@ -4,6 +4,9 @@ import './App.css';
 import { Button } from 'storybook_producer_app';
 
 function App() {
+  const handleButtonClick = () => {
+    alert("Button getting used from the producer app! Hurray!");
+  };
   return (
     <div className="App">
       <header className="App-header">
@@ -19,7 +22,7 @@ function App() {
         >
           Learn React
         </a>
-        <Button label='Hello Nav! Are you there?'></Button>
+        <Button label='Hello Nav! Are you there?' onClick={handleButtonClick}></Button>
       </header>
     </div>
   );
